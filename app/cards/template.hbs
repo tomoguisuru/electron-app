@@ -1,0 +1,12 @@
+Search Cards: {{input type="text" value=search}}
+<button {{action (perform searchCards search)}}>Search</button>
+
+{{#if model}}
+  Name: {{model.name}}
+{{/if}}
+
+<ul>Search Results:
+  {{#each cards as |card|}}
+    <li>{{card.name}}</li>
+  {{/each}}
+</ul>
