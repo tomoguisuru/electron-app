@@ -15,7 +15,8 @@
 /libpeerconnection.log
 npm-debug.log*
 testem.log
-/electron-out
 
 # IDE
 .idea
+
+electron-out/
