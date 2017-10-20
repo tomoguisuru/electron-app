@@ -1,0 +1,20 @@
+<div>
+  {{#link-to "cards.index"}}
+    &lt; Back
+  {{/link-to}}
+</div>
+
+<div class="flex flex-justify--center flex-align--center flex-direction--column">
+  <h2>{{model.name}}</h2>
+
+  <div class="flex">
+    <div class="mtg__card">
+      <img src="{{model.imageUrl}}">
+    </div>
+    <div class="mtg__card-details">
+      {{model.text}}
+
+      <div class=""></div>
+    </div>
+  </div>
+</div>

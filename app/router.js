@@ -7,7 +7,10 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('cards');
+  this.route('cards', { path: '/' }, function() {
+    this.route('index', { path: '/' });
+    this.route('view', { path: '/:multiverseid' });
+  });
 });
 
 export default Router;

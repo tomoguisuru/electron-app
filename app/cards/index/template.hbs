@@ -1,0 +1,16 @@
+Search Cards: {{input type="text" value=search}}
+<button {{action (perform searchCards search)}}>Search</button>
+
+<h3>Search Results:</h3>
+
+<div class="flex flex--wrap">
+{{#each cards as |card|}}
+  <a class="mtg__card flex flex--one flex-justify--center flex-align--center" {{action "viewCard" card}}>
+    {{#if card.imageUrl}}
+      <img src="{{card.imageUrl}}">
+    {{else}}
+      <span>{{card.name}}</span>
+    {{/if}}
+  </a>
+{{/each}}
+</div>

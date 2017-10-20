@@ -1,3 +1,4 @@
+// https://docs.magicthegathering.io
 import DS from 'ember-data';
 
 const {

@@ -22,8 +22,8 @@ const CardsController = Controller.extend({
   }).restartable(),
 
   actions: {
-    search_cards(search) {
-      get(this, 'searchRecords').perform();
+    viewCard(card) {
+      this.transitionToRoute('cards.view', card);
     },
   }
 });

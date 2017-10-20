@@ -6,8 +6,12 @@ const {
 } = DS;
 
 const CardModel = Model.extend({
-  name:   attr('string'),
-  //names:  attr('array'),
+  name:     attr('string'),
+  imageUrl: attr('string'),
+  flavor:   attr('string'),
+  text:     attr('string'),
+
+  multiverseid: attr('number')
 });
 
 export default CardModel;

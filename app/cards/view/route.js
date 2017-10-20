@@ -7,15 +7,15 @@ const {
   inject: { service },
 } = Ember;
 
-const CardsRoute = Route.extend({
+const CardsViewRoute = Route.extend({
 
   store: service(),
 
   model(params) {
-    const { id } = params;
+    const { multiverseid } = params;
 
-    if (id) {
-      return get(this, 'store').findRecord('card', id);
+    if (multiverseid) {
+      return get(this, 'store').findRecord('card', multiverseid);
     }
   },
 
@@ -27,4 +27,4 @@ const CardsRoute = Route.extend({
 
 });
 
-export default CardsRoute;
+export default CardsViewRoute;
